@@ -5,9 +5,7 @@ describe Menu do
     expect(subject.dishes).not_to be_empty
   end
 
-  it 'each dish has a price as a float' do
-    subject.dishes.each do |dish, price|
-      expect(subject.dishes[dish].class).to be Float
-    end
+  it 'each dish has a price' do
+    expect(subject.dishes.values).to include Float
   end
 end
