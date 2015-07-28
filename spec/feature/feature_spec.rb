@@ -6,7 +6,9 @@ feature 'A customer' do
   order = Order.new
 
   scenario 'can see a list of dishes with prices' do
-    expected_dishes = { "Fish" => 4.00, "Chips" => 3.00, "Cola" => 2.00 }
+    expected_dishes = [{ name: "Fish", price: 4 },
+                       { name: "Chips", price: 3 },
+                       { name: "Cola", price: 2 }]
     expect(menu.dishes).to eq expected_dishes
   end
 

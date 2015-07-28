@@ -1,12 +1,12 @@
-require 'menu'
+require_relative 'menu'
 
 class Lineitem
-  attr_reader :dish, :qty, :price, :line_total
+  attr_reader :dish_name, :dish_qty, :dish_price, :line_total
 
   def initialize dish, qty = 1
-    @dish = dish
-    @qty = qty
-    @price = 1
-    @line_total = 1
+    @dish_name = dish[:name]
+    @dish_price = dish[:price]
+    @dish_qty = qty
+    @line_total = @dish_price * @dish_qty
   end
 end

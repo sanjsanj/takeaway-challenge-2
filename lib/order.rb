@@ -1,4 +1,4 @@
-require 'lineitem'
+require_relative 'lineitem'
 
 class Order
   def initialize
@@ -6,7 +6,7 @@ class Order
   end
 
   def add dish, qty = 1
-    Menu.new.dishes.keys.include? dish ? @lineitem << Menu.new.dishes[dish] : true
+    # Menu.new.dishes.keys.include? dish ? @lineitem << Menu.new.dishes[dish] : true
   end
 
   def view

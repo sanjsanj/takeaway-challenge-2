@@ -1,9 +1,10 @@
 class Menu
-  def dishes
-    {
-      "Fish" => 4.00,
-      "Chips" => 3.00,
-      "Cola" => 2.00
-    }
+  attr_reader :dishes
+  DISHES = [{ name: "Fish", price: 4 },
+            { name: "Chips", price: 3 },
+            { name: "Cola", price: 2 }]
+
+  def initialize dishes = DISHES
+    @dishes = dishes
   end
 end
