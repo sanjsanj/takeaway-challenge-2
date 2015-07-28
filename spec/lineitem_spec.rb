@@ -6,11 +6,8 @@ describe Lineitem do
                                       { name: "Cola", price: 2 }]
              }
 
-  before do
-    lineitem_1 = Lineitem.new menu.dishes[0]
-    lineitem_2 = Lineitem.new menu.dishes[1], 2
-  end
-
+  let(:lineitem_1) { Lineitem.new menu.dishes[0] }
+  let(:lineitem_2) { Lineitem.new menu.dishes[1], 2 }
 
   it 'knows the name of a dish' do
     expect(lineitem_1.dish_name).to eq "Fish"
@@ -29,7 +26,7 @@ describe Lineitem do
   end
 
   it 'knows the line total for a single quantity dish' do
-    expect(lineitem_1.dish_qty).to eq 4
+    expect(lineitem_1.line_total).to eq 4
   end
 
   it 'knows the line total for a multiple quantity dish' do
