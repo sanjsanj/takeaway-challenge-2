@@ -1,7 +1,7 @@
 Takeaway Challenge
 ==================
 
-[![Build Status](https://travis-ci.org/makersacademy/takeaway-challenge.svg?branch=master)](https://travis-ci.org/makersacademy/takeaway-challenge)  [![Coverage Status](https://coveralls.io/repos/makersacademy/takeaway-challenge/badge.png)](https://coveralls.io/r/makersacademy/takeaway-challenge)
+[![Build Status](https://travis-ci.org/makersacademy/takeaway-challenge.svg?branch=master)](https://travis-ci.org/makersacademy/takeaway-challenge)  [![Coverage Status](https://coveralls.io/repos/sanjsanj/takeaway-challenge-2/badge.svg?branch=master&service=github)](https://coveralls.io/github/sanjsanj/takeaway-challenge-2?branch=master)
 
 Task
 

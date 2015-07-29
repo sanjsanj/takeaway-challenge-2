@@ -6,10 +6,14 @@ describe Menu do
   end
 
   it 'each dish has a name' do
-    # expect(subject.dishes.values).to include Float
+    subject.dishes.each do |dish|
+      expect(dish[:name].class).to be String
+    end
   end
 
   it 'each dish has a price' do
-    # expect(subject.dishes.values).to include Float
+    subject.dishes.each do |dish|
+      expect(dish[:price].class).to be Float
+    end
   end
 end
