@@ -13,7 +13,7 @@ describe Lineitem do
     expect(lineitem_1.dish_name).to eq "Fish"
   end
 
-  it 'knows the price for each dish' do
+  it 'knows the price of a dish' do
     expect(lineitem_1.dish_price).to eq 4
   end
 

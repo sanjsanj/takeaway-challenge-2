@@ -1,15 +1,20 @@
 require_relative 'lineitem'
 
 class Order
-  def initialize
-    @lineitem = {}
+  attr_reader :order_array
+
+  def initialize *line_items
+    @order_array = []
+    line_items.each do |arg|
+      @order_array << arg
+    end
   end
 
-  def add dish, qty = 1
-    # Menu.new.dishes.keys.include? dish ? @lineitem << Menu.new.dishes[dish] : true
-  end
-
-  def view
-    @lineitem
+  def total
+    to_return = 0
+    @order_array.each do |order|
+      to_return += order.line_total
+    end
+    to_return
   end
 end

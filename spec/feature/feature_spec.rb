@@ -3,7 +3,7 @@ require 'order'
 
 feature 'A customer' do
   menu = Menu.new
-  order = Order.new
+  # order = Order.new
 
   scenario 'can see a list of dishes with prices' do
     expected_dishes = [{ name: "Fish", price: 4 },
