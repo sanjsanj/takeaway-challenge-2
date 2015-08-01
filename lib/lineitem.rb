@@ -7,6 +7,6 @@ class Lineitem
     @dish_name = dish[:name]
     @dish_price = dish[:price]
     @dish_qty = qty
-    @line_total = @dish_price * @dish_qty
+    @line_total = dish_price * dish_qty
   end
 end
