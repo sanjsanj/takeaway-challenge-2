@@ -27,7 +27,17 @@ I would like to receive a text such as "Thank you! Your order was placed and wil
 
 ----------
 
+Setup:
+```
+$ bundle
+```
+
 To run tests:
 ```
 $ rake
+```
+
+To run app locally:
+```
+$ rerun 'ruby app.rb'
 ```
