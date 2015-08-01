@@ -1,7 +1,7 @@
 Takeaway Challenge
 ==================
 
-[![Build Status](https://travis-ci.org/sanjsanj/takeaway-challenge-2.svg?branch=master)](https://travis-ci.org/sanjsanj/takeaway-challenge-2)  [![Coverage Status](https://coveralls.io/repos/sanjsanj/takeaway-challenge-2/badge.svg?branch=master&service=github)](https://coveralls.io/github/sanjsanj/takeaway-challenge-2?branch=master)
+[![Build Status](https://travis-ci.org/sanjsanj/takeaway-challenge-2.svg?branch=master)](https://travis-ci.org/sanjsanj/takeaway-challenge-2)  [![Coverage Status](https://coveralls.io/repos/sanjsanj/takeaway-challenge-2/badge.svg?branch=master&service=github)](https://coveralls.io/github/sanjsanj/takeaway-challenge-2?branch=master)  [![Code Climate](https://codeclimate.com/github/sanjsanj/takeaway-challenge-2/badges/gpa.svg)](https://codeclimate.com/github/sanjsanj/takeaway-challenge-2)
 
 Task
 
