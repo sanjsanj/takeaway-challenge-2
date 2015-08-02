@@ -2,12 +2,16 @@ require 'sinatra'
 require 'json'
 require 'rest_client'
 
+require './lib/menu'
+
 before do
   content_type 'application/json'
 end
 
 get '/' do
   content_type 'html'
+  dishes = Menu.dishes.all
+  dishes.to_json
   erb :index
 end
 

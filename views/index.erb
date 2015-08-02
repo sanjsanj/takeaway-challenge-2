@@ -9,7 +9,13 @@
     <script src="App.js"></script>
     <script src="Takeaway.js"></script>
   </head>
-  <body>
+  <body ng-controller="TakeawayController as ctrl">
     Takeaway with Ruby, Sinatra and Angular
+    <button class="btn btn-primary" ng-click="loadData()">Load Data From Server</button>
+    <ul>
+      <li ng-repeat="dish in dishes">
+        Name: {{dish.name}}
+      </li>
+    </ul>
   </body>
 </html>

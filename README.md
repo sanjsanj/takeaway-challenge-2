@@ -40,4 +40,5 @@ $ rake
 To run app locally:
 ```
 $ rerun 'ruby app.rb'
+navigate browser to localhost:4567
 ```
