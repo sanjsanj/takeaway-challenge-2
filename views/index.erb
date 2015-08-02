@@ -2,9 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Takeaway</title>
   </head>
   <body>
-    Hi
+    <h1>Takeaway</h1>
+    <% @menu.dishes.each do |dish| %>
+      <li><%= dish[:name] %> £<%= '%.2f' % dish[:price] %></li>
+    <% end %>
   </body>
 </html>

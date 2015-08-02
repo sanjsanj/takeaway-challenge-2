@@ -2,8 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.2.1'
 
-gem 'rspec'
-gem 'coveralls', require: false
-gem 'capybara'
 gem 'sinatra'
-gem 'shotgun'
+
+group :development, :test do
+  gem 'capybara'
+  gem 'coveralls', require: false
+  gem 'rspec'
+  gem 'rspec-sinatra'
+  gem 'shotgun'
+end

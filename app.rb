@@ -1,6 +1,11 @@
-require 'sinatra'
+require 'sinatra/base'
+require './lib/order'
 
-get '/' do
-  'Hello world'
-  erb :index
+class Takeaway < Sinatra::Base
+  get '/' do
+    @menu = Menu.new
+    erb :index
+  end
+
+  run! if app_file == $0
 end

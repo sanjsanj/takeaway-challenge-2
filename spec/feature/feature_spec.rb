@@ -7,10 +7,8 @@ feature 'A customer' do
   order_1 = Order.new lineitem_1, lineitem_2
 
   scenario 'can see a list of dishes with prices' do
-    expected_dishes = [{ name: "Fish", price: 4 },
-                       { name: "Chips", price: 3 },
-                       { name: "Cola", price: 2 }]
-    expect(menu.dishes).to eq expected_dishes
+    visit '/'
+    expect(page).to have_content "Fish £4.00 Chips £3.00 Cola £2.00"
   end
 
   scenario 'can select some number of several available dishes' do
