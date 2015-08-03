@@ -7,4 +7,10 @@ body {
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 0.25em;
+  height: 15em;
+}
+
+img {
+  height: 100%;
+  width: 20em;
 }

@@ -6,7 +6,7 @@ feature 'Interface test' do
   end
 
   scenario 'Customer can see a list of dishes with prices' do
-    expect(page).to have_content 'Fish £4.00 Chips £3.00 Cola £2.00'
+    expect(page).to have_content 'Fish £4.00 Add to cart Chips £3.00 Add to cart Cola £2.00 Add to cart'
   end
 
   scenario 'Customer can select some number of several available dishes' do
