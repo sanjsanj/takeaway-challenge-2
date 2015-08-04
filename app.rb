@@ -2,6 +2,8 @@ require 'sinatra/base'
 require './lib/order'
 
 class Takeaway < Sinatra::Base
+  enable :sessions
+
   get '/' do
     @menu = Menu.new
     erb :index
