@@ -1,14 +1,13 @@
 require_relative 'lineitem'
 
 class Order
-  attr_reader :line_items_array
+  attr_reader :line_items
 
   def initialize *line_items
-    @line_items_array = []
-    line_items.each { |lineitem| line_items_array << lineitem }
+    @line_items = line_items
   end
 
   def total
-  line_items_array.inject(0) { |sum, lineitem| sum + lineitem.line_total }
+    line_items.inject(0) { |sum, lineitem| sum + lineitem.total }
   end
 end

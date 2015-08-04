@@ -5,7 +5,8 @@ class Takeaway < Sinatra::Base
   enable :sessions
 
   get '/' do
-    @menu = Menu.new
+    session[:menu] = Menu.new
+    @menu = session[:menu]
     erb :index
   end
 

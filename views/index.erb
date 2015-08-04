@@ -7,10 +7,13 @@
   </head>
   <body>
     <h1>Takeaway</h1>
-      <% @menu.dishes.each do |dish| %>
-        <h3><%= dish[:name] %></h3>
-        <div>£<%= '%.2f' % dish[:price] %></div>
-        <button onclick="">Add to cart</button>
-      <% end %>
+    <% @menu.dishes.each do |dish| %>
+      <h3><%= dish[:name] %></h3>
+      <div>£<%= '%.2f' % dish[:price] %></div>
+      <form action="/" method="get">
+        <input type="hidden" name="dish" value="<%= dish[:name] %>">
+        <button>Add to cart</button>
+      </form>
+    <% end %>
   </body>
 </html>
