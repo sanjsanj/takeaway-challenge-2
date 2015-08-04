@@ -3,14 +3,33 @@ body {
 }
 
 .itemContainer {
+  position: relative;
   background-color: white;
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 0.25em;
-  height: 15em;
+  height: 8em;
+  overflow: hidden;
 }
 
 img {
-  height: 100%;
   width: 20em;
+}
+
+.itemName {
+  position: absolute;
+  top: 0.1em;
+  right: 2em;
+}
+
+.itemPrice {
+  position: absolute;
+  top: 5.4em;
+  right: 15em;
+}
+
+.buyButton {
+  position: absolute;
+  top: 5em;
+  right: 2em;
 }
